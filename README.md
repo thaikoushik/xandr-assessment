@@ -43,19 +43,19 @@ Sample Employee object:
 ]
 ```` 
 To run the project using docker file, run the below dockers commands which will create and run image
-
-In the project directory - 
+- Clone the repo
+- In the project directory - 
 `docker build -t xandr-assignment .`
 
-Run the below command to see the list of the images
+- Run the below command to see the list of the images
 `docker image`
 
-Copy the image id associated to the Repository xandr-assignment
+- Copy the image id associated to the Repository xandr-assignment
 `docker run -d -p 5000:5000 <IMAGE ID copied from the above command>`
 
-Below command will show the list of the running containers 
+- Below command will show the list of the running containers 
 `docker ps` 
 
-Use the below commands to stop and remove container
+- Use the below commands to stop and remove container
 `docker stop <IMAGE ID>`
 `docker rm <IMAGE ID>`
