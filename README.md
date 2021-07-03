@@ -1,6 +1,7 @@
 XANDR Assignment 
 ==============================
 This project is a coding assignment for the Xandr, which hosts few endpoints for the employees. This project containts the following files and directories - 
+	````
 	- Employee
 		- DockerFile
 		- src
@@ -8,7 +9,7 @@ This project is a coding assignment for the Xandr, which hosts few endpoints for
 			- db
 				- data.txt(Database File)
 				- db_helper.py
-			
+	````		
 
 Getting Started
 ------------
