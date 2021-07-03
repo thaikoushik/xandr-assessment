@@ -1,15 +1,18 @@
 XANDR Assignment 
 ==============================
 This project is a coding assignment for the Xandr, which hosts few endpoints for the employees. This project containts the following files and directories - 
-	````
-	- Employee
-		- DockerFile
-		- src
-			- server.py
-			- db
-				- data.txt(Database File)
-				- db_helper.py
-	````		
+### A typical top-level directory layout
+
+    .
+    ├── DockerFile              # Dockerfile contains list of commands
+    ├── src                     # Source files
+    	├── server.py           
+    	├── db                  # Database files - create/update
+    		├── db_helper.py 
+		├── data.txt    # Database file 
+    ├── License
+    └── README.md
+	
 
 Getting Started
 ------------
