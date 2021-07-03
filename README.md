@@ -1,6 +1,6 @@
 XANDR Assignment 
 ==============================
-This project is a coding assignment for the Xandr, which hosts few endpoints for the employees.  
+This project is a coding assignment for Xandr, which hosts few endpoints for adding and updating employees information and their salaries.  
 ### Project Structure
     .
     ├── DockerFile              # Dockerfile contains list of commands
