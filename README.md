@@ -1,6 +1,6 @@
 XANDR Assignment 
 ==============================
-This project is a coding assignment for the Xandr, which hosts few endpoints for the employees. This project containts the following files and directories - 
+This project is a coding assignment for the Xandr, which hosts few endpoints for the employees.  
 ### Project Structure
     .
     ├── DockerFile              # Dockerfile contains list of commands
