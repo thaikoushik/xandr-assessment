@@ -16,11 +16,11 @@ This project is a coding assignment for the Xandr, which hosts few endpoints for
 
 Getting Started
 ------------
-This project hosted the below endoints - 
-		1. /save(POST) - pass ane employee object with parameters (name, dob, role, salary, joindate) to save an employee
-		2. /getallemployees(GET) - Use this route to get all the employees from the DB
-		3. /updatesalary/<empid>(PUT) - Use this route to update an employee salary by 5%, pass employee id in URL
-		4. /getemployee/<empid> (GET) - Use this route to get employee info using employee id"""
+This project hosted the below endoints 
+- /save(POST) - pass ane employee object with parameters (name, dob, role, salary, joindate) to save an employee
+- /getallemployees(GET) - Use this route to get all the employees from the DB
+- /updatesalary/<empid>(PUT) - Use this route to update an employee salary by 5%, pass employee id in URL
+- /getemployee/<empid> (GET) - Use this route to get employee info using employee id
 
 Sample Employee object:
 ```` 
