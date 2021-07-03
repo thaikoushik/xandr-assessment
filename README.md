@@ -1,8 +1,7 @@
 XANDR Assignment 
 ==============================
 This project is a coding assignment for the Xandr, which hosts few endpoints for the employees. This project containts the following files and directories - 
-### A typical top-level directory layout
-
+### Project Structure
     .
     ├── DockerFile              # Dockerfile contains list of commands
     ├── src                     # Source files
