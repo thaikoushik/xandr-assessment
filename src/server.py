@@ -65,7 +65,6 @@ def update_salaries(empid):
     """
     #Call the method in db_helper
     state = update_salary(empid)
-    print(state)
     if state['data'] == '[]':
         return jsonify({"message":"Employee not found"})
     #return data or message if the id is present
@@ -82,7 +81,6 @@ def get_employee_data(empid):
     """
     #Call the method in db_helper
     state = get_employee_info(empid)
-    print(state)
     if state['data'] == '[]':
         return jsonify({"message":"Employee not found"})
     #return data or message if the id is present
