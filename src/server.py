@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import request, redirect, url_for
+from flask import request, redirect, url_for, jsonify
 from flask import Blueprint
 from db.db_helper import *
 
@@ -38,9 +38,9 @@ def save_employee():
     state = save_data(data)
     #if error return appropriate message
     if not state['status']:
-        return {"message":"Data not Insterted", "error": state['exception']}
+        return jsonify({"message":"Data not Insterted", "error": state['exception']})
     #Return data if there is no error
-    return {"message":"Data Insterted Successfully", "data":state["data"]}
+    return jsonify({"message":"Data Insterted Successfully", "data":state["data"]})
 ###################################################################################################
 @server.route("/getallemployees", methods=['GET'])
 def get_all_employees():
@@ -53,7 +53,7 @@ def get_all_employees():
     state = get_employees()
     #Based on status retuen appropriate message
     if not state['status']:
-        return {"message":"No data Available", "error": state['exception']}
+        return jsonify({"message":"No data Available", "error": state['exception']})
     return state['data']
 ###################################################################################################
 @server.route("/updatesalary/<empid>", methods=["PUT"])
@@ -65,9 +65,12 @@ def update_salaries(empid):
     """
     #Call the method in db_helper
     state = update_salary(empid)
+    print(state)
+    if state['data'] == '[]':
+        return jsonify({"message":"Employee not found"})
     #return data or message if the id is present
     if not state['status']:
-        return {"message":"Employee records not updated", "error": state['exception']}
+        return jsonify({"message":"Employee records not updated", "error": state['exception']})
     return state["data"]
 ###################################################################################################
 @server.route("/getemployee/<empid>", methods=["GET"])
@@ -79,9 +82,12 @@ def get_employee_data(empid):
     """
     #Call the method in db_helper
     state = get_employee_info(empid)
+    print(state)
+    if state['data'] == '[]':
+        return jsonify({"message":"Employee not found"})
     #return data or message if the id is present
     if not state['status']:
-        return {"message":"Employee not found"}
+        return jsonify({"message":"Employee not found", "error": state['exception']})
     return state["data"]
 ###################################################################################################
 if __name__ == "__main__":

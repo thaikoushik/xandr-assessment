@@ -79,7 +79,7 @@ def get_employees():
         data.pop(0)
         #COnvert dictionary indo JSON
         json_data = json.dumps(data)
-        return{'exception':None, 'status':True, 'data': json_data}#json_data
+        return{'exception':None, 'status':True, 'data': json_data}
     except Exception as exception:
         return{'exception': str(exception), 'status':False, 'data': []}
 ###################################################################################################

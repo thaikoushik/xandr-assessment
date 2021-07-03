@@ -1,2 +1,1 @@
 id|name|dob|role|salary|joindate
-1|kk|06/28/2021|sde|55125.0|06/28/2021
