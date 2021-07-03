@@ -57,5 +57,5 @@ To run the project using docker file, run the below dockers commands which will 
 `docker ps` 
 
 - Use the below commands to stop and remove container
-`docker stop <IMAGE ID>`
-`docker rm <IMAGE ID>`
+`docker stop <CONTAINER ID>`
+`docker rm <CONTAINER ID>`
